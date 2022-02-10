@@ -5,7 +5,7 @@
     --primary-color: #EE4D2D;
     --broder-color: #dbdbdb;
     --navbar-height: 34px;
-    --header-height: 300pxpx;
+    --header-height: 300px;
     --header-with-search-height: calc(var(--header-height)- var(--navbar-height));
 }
 
@@ -58,7 +58,7 @@ p {
 }
 /* Button style */
 .btn {
-    min-width: 142px;
+    min-width: 124px;
     height: 34px;
     text-decoration: none;
     border: none;

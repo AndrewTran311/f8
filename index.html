@@ -43,20 +43,20 @@
                     </ul>
                     <ul class="header_navbar_list">
                         <li class="header_navbar_item">
-                            <a href="https://adev42.com/frontend/demo/f8-shop/index.html" class="header_navbar_icon3"><i
-                                    class="far fa-bell"></i></a> Thông báo
+                            <a href="https://adev42.com/frontend/demo/f8-shop/index.html" class="header_navbar_icon3">
+                                <i class="far fa-bell"></i></a> Thông báo
                             <div class="header_notify">
                             </div>
                         </li>
                         <li class="header_navbar_item2">
-                            <a href="https://adev42.com/frontend/demo/f8-shop/index.html" class="header_navbar_icon4"><i
-                                    class="far fa-question-circle"></i></a> Trợ giúp
+                            <a href="https://adev42.com/frontend/demo/f8-shop/index.html" class="header_navbar_icon4">
+                                <i class="far fa-question-circle"></i></a> Trợ giúp
                         </li>
                         <li class="header_navbar_item3">
-                            <a href="https://adev42.com/frontend/demo/f8-shop/index.html" class=""></a>
+                            <span class="header_navbar_DN"> Đăng nhập</span>
                         </li>
                         <li class="header_navbar_item4">
-                            <a href="https://adev42.com/frontend/demo/f8-shop/index.html"></a>
+                            <span class="header_navbar_DK"> Đăng ký</span>
                         </li>
                     </ul>
                 </nav>
@@ -73,8 +73,20 @@
                         </div>
                         <div class="header_search">
                             <div class="header_search_input_wrap">
-                                <input type="text" class="header_search_input" placeholder="Nhap de tim san pham">
+                                <input type="text" class="header_search_input" placeholder="Nhấp để tìm sản phẩm">
                                 <div class="header_search_input_title"></div>
+                                <!-- header search history -->
+                                <div class="header_search_history">
+                                    <h3 class="header_search_history_heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header_search_history_list">
+                                        <li class="header_search_history_item">
+                                            <a href="">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="header_search_history_item">
+                                            <a href="">Kem trị mụn</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="header_search_selection">
                                 <span class="header_search_selection_tabel">Trong shop</span>
@@ -85,7 +97,7 @@
                                         <i class="fas fa-check"></i>
                                     </li>
                                     <li class="header_search_option_item">
-                                        <span>Ngoai shop</span>
+                                        <span>Ngoài shop</span>
                                         <i class="fas fa-check"></i>
                                     </li>
                                 </ul>
@@ -94,15 +106,103 @@
                                 <i class="header_search_btn_icon fas fa-search"></i>
                             </button>
                         </div>
+                        <!-- cart layout -->
                         <div class="header_cart">
-                            <i class="header_icon_cart fas fa-shopping-cart"></i>
+                            <div class="header_cart_wap">
+                                <i class="header_icon_cart fas fa-shopping-cart"></i>
+                                <span class="header_cart_notice">3</span>
+                                <!-- no cart : header_cart_list_nocart -->
+                                <div class="header_cart_list ">
+                                    <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/9bdd8040b334d31946f49e36beaf32db.png"
+                                        alt="" class="header_cart_list_nocart_img">
+                                    <span class="header_cart_list_nocart_smg">Chưa có sản phẩm</span>
+                                    <h4 class="header_cart_heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header_cart_list_item">
+                                        <!-- cart item -->
+                                        <li class="header_cart_item">
+                                            <img src="https://img.abaha.vn/photos/origin/83-1580794419-myphamohui-lgvina.png"
+                                                alt="" class="header_cart_item_img">
+                                            <div class="header_cart_item_info">
+                                                <div class="header_cart_item_head">
+                                                    <h5 class="header_cart_item_name">Set kem mắt tái sinh Ohui The
+                                                        First Geniture Eye Cream Edition Grand Blue</h5>
+                                                    <div class="header_item_wrap">
+                                                        <span class="header_cart_item_price">1.000.000đ</span>
+                                                        <span class="header_cart_item_miltiply">X</span>
+                                                        <span class="header_cart_item_qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header_cart_item_body">
+                                                    <span class="header_cart_item_description">
+                                                        Phân loại: Bạc
+                                                    </span>
+                                                    <span class="header_cart_item_remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header_cart_item">
+                                            <img src="https://lzd-img-global.slatic.net/g/p/fbe871e027ed4051a79b58b3d246d307.jpg_200x200q90.jpg"
+                                                alt="" class="header_cart_item_img">
+                                            <div class="header_cart_item_info">
+                                                <div class="header_cart_item_head">
+                                                    <h5 class="header_cart_item_name">Kem Body Collagen X3 Luxury Đông Anh.
+                                                        Siêu Trắng Mịn . Hiệu quả chỉ sau 1 tuần</h5>
+                                                    <div class="header_item_wrap">
+                                                        <span class="header_cart_item_price">100.000đ</span>
+                                                        <span class="header_cart_item_miltiply">X</span>
+                                                        <span class="header_cart_item_qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header_cart_item_body">
+                                                    <span class="header_cart_item_description">
+                                                        Phân loại: Bạc
+                                                    </span>
+                                                    <span class="header_cart_item_remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header_cart_item">
+                                            <img src="https://lzd-img-global.slatic.net/g/p/b4cfa57a9625e233c11a198736842286.jpg_200x200q80.jpg"
+                                                alt="" class="header_cart_item_img">
+                                            <div class="header_cart_item_info">
+                                                <div class="header_cart_item_head">
+                                                    <h5 class="header_cart_item_name">Nước xịt dưỡng tóc Double Rich chăm sóc tóc khô sơ hư tổn 120ml - 250ml</h5>
+                                                    <div class="header_item_wrap">
+                                                        <span class="header_cart_item_price">62.000đ</span>
+                                                        <span class="header_cart_item_miltiply">X</span>
+                                                        <span class="header_cart_item_qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header_cart_item_body">
+                                                    <span class="header_cart_item_description">
+                                                        Phân loại: Bạc
+                                                    </span>
+                                                    <span class="header_cart_item_remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <button class="header_cart_view btn btn_primary">Xem giỏ hàng</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="header_bottom_add">
+
+            </div>
         </header>
         <div class="container">
+            <div class="app_container">
+                <div>
 
+                </div>
+                <div>
+
+                </div>
+            </div>
         </div>
         <div class="footer">
 
@@ -118,40 +218,40 @@
     <!--<div class="auth-form">
                 <div class="auth-form_container">
                     <div class="auth-form_header">
-                        <h3 class="auth-form_heading">Dang ky</h3>
-                        <span class="auth-form_switch-btn">Dang nhap</span>
+                        <h3 class="auth-form_heading">Đăng ký</h3>
+                        <span class="auth-form_switch-btn">Đăng nhập</span>
                     </div>
                     <div class="auth-form_form">
                         <div class="auth-form_group">
-                            <input type="" class="auth-form_input" placeholder="Email cua ban">
+                            <input type="" class="auth-form_input" placeholder="Email của bạn">
                         </div>
                         <div class="auth-form_group">
-                            <input type="" class="auth-form_input" placeholder="Mat khau cua ban">
+                            <input type="" class="auth-form_input" placeholder="Mật khẩu của bạn">
                         </div>
                         <div class="auth-form_group">
-                            <input type="" class="auth-form_input" placeholder="Nhap lai mat khau">
+                            <input type="" class="auth-form_input" placeholder="Nhập lại mật khẩu">
                         </div>
                     </div>
                     <div class="auth-form_aside">
                         <p class="auth-form_policy-text">
-                            Bang viec dang ky, ban dong y voi shop
-                            <a href="" class="auth-form_text-link">Dieu khoan dich vu</a> &
-                            <a href="" class="auth-form_text-link">Chinh sach bao mat</a>
+                            Bằng việc đăng ký, bạn đồng ý với shop
+                            <a href="" class="auth-form_text-link">Điều khoảng dịch vụ</a> &
+                            <a href="" class="auth-form_text-link">Chính sách bảo mật</a>
                         </p>
                     </div>
                     <div class="auth-form_controls">
-                        <button class="btn auth-form_controls_back btn_nomal">TRO LAI</button>
-                        <button class="btn btn_primary">DANG KY</button>
+                        <button class="btn auth-form_controls_back btn_nomal">TRỞ LẠI</button>
+                        <button class="btn btn_primary">ĐĂNG KÝ</button>
                     </div>
                 </div>
                 <div class="auth-form_socials">
                     <a  href="" class="auth-form_socials_fb btn btn_size_s btn_with-icon">
                         <i class="auth-form_socials_icon fab fa-facebook-square"></i>
-                        <span class="auth-form_socials_title">Ket noi voi Facebook</span>
+                        <span class="auth-form_socials_title">Kết nối với Facebook</span>
                     </a>
                     <a href="" class="auth-form_socials_gg btn btn_size_s btn_with-icon">
                         <i class="auth-form_socials_icon fab fa-google"></i>
-                        <span class="auth-form_socials_title">Ket noi voi Google</span>
+                        <span class="auth-form_socials_title">Kết nối với Google</span>
                     </a>
         
                 </div>
@@ -162,37 +262,37 @@
     <!-- <div class="auth-form">
                 <div class="auth-form_container">
                     <div class="auth-form_header">
-                        <h3 class="auth-form_heading">Dang nhap</h3>
-                        <span class="auth-form_switch-btn">Dang ky</span>
+                        <h3 class="auth-form_heading">Đăng nhập</h3>
+                        <span class="auth-form_switch-btn">Đăng ký</span>
                     </div>
                     <div class="auth-form_form">
                         <div class="auth-form_group">
-                            <input type="" class="auth-form_input" placeholder="Email cua ban">
+                            <input type="" class="auth-form_input" placeholder="Email của bạn">
                         </div>
                         <div class="auth-form_group">
-                            <input type="" class="auth-form_input" placeholder="Mat khau cua ban">
+                            <input type="" class="auth-form_input" placeholder="Mật khẩu của bạn">
                         </div>
                     </div>
                     <div class="auth-form_aside">
                         <div class="auth-form_help">
-                            <a href="" class="auth-form_link auth-form_link_forgot">Quen mat khau</a>
+                            <a href="" class="auth-form_link auth-form_link_forgot">Quên mật khẩu</a>
                             <span class="auth-form_help_separate"></span>
-                            <a href="" class="auth-form_link">Can tro giup?</a>
+                            <a href="" class="auth-form_link">Cần trợ giúp?</a>
                         </div>
                     </div>
                     <div class="auth-form_controls">
-                        <button class="btn auth-form_controls_back btn_nomal">TRO LAI</button>
-                        <button class="btn btn_primary">DANG NHAP</button>
+                        <button class="btn auth-form_controls_back btn_nomal">TRỞ LẠI</button>
+                        <button class="btn btn_primary">ĐĂNG NHẬP</button>
                     </div>
                 </div>
                 <div class="auth-form_socials">
                     <a href="" class="auth-form_socials_fb btn btn_size_s btn_with-icon">
                         <i class="auth-form_socials_icon fab fa-facebook-square"></i>
-                        <span class="auth-form_socials_title">Ket noi voi Facebook</span>
+                        <span class="auth-form_socials_title">Kết nối với Facebook</span>
                     </a>
                     <a href="" class="auth-form_socials_gg btn btn_size_s btn_with-icon">
                         <i class="auth-form_socials_icon fab fa-google"></i>
-                        <span class="auth-form_socials_title">Ket noi voi Google</span>
+                        <span class="auth-form_socials_title">Kết nối với Google</span>
                     </a>
 
                 </div>
