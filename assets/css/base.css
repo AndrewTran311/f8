@@ -102,6 +102,7 @@ p {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
+    cursor: pointer;
 }
 .grid-colum-10 {
     padding-left: 5px;
