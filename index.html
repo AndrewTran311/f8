@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.0.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -50,7 +51,7 @@
                         </li>
                         <li class="header_navbar_item2">
                             <a href="https://adev42.com/frontend/demo/f8-shop/index.html" class="header_navbar_icon4">
-                                <i class="far fa-question-circle"></i></a> Trợ giúp
+                                <i class="header_navbar_item2_icon far fa-question-circle"></i></a> Trợ giúp
                         </li>
                         <li class="header_navbar_item3">
                             <span class="header_navbar_DN"> Đăng nhập</span>
@@ -145,7 +146,8 @@
                                                 alt="" class="header_cart_item_img">
                                             <div class="header_cart_item_info">
                                                 <div class="header_cart_item_head">
-                                                    <h5 class="header_cart_item_name">Kem Body Collagen X3 Luxury Đông Anh.
+                                                    <h5 class="header_cart_item_name">Kem Body Collagen X3 Luxury Đông
+                                                        Anh.
                                                         Siêu Trắng Mịn . Hiệu quả chỉ sau 1 tuần</h5>
                                                     <div class="header_item_wrap">
                                                         <span class="header_cart_item_price">100.000đ</span>
@@ -166,7 +168,8 @@
                                                 alt="" class="header_cart_item_img">
                                             <div class="header_cart_item_info">
                                                 <div class="header_cart_item_head">
-                                                    <h5 class="header_cart_item_name">Nước xịt dưỡng tóc Double Rich chăm sóc tóc khô sơ hư tổn 120ml - 250ml</h5>
+                                                    <h5 class="header_cart_item_name">Nước xịt dưỡng tóc Double Rich
+                                                        chăm sóc tóc khô sơ hư tổn 120ml - 250ml</h5>
                                                     <div class="header_item_wrap">
                                                         <span class="header_cart_item_price">62.000đ</span>
                                                         <span class="header_cart_item_miltiply">X</span>
@@ -196,12 +199,436 @@
         </header>
         <div class="container">
             <div class="app_container">
-                <div>
+                <div class="grid">
+                    <div class="grid-row app_content">
+                        <div class="grid-colum-2">
+                            <nav class="category">
+                                <h3 class="category_heading">
+                                    <i class="category_heading_icon fas fa-list"></i>
+                                    Danh mục
+                                </h3>
+                                <ul class="category_list">
+                                    <li class="category_item category_item_active">
+                                        <a href="#" class="category_link">TRANG ĐIỂM MẶT</a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="#" class="category_link">TRANG ĐIỂM MÔI</a>
+                                    </li>
+                                    <li class="category_item">
+                                        <a href="#" class="category_link">TRANG ĐIỂM MẮT</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="grid-colum-10">
+                            <div class="home_filter">
+                                <span class="home_filter_label">Sắp xếp theo: </span>
+                                <button class="btn btn_filter">Phổ biến</button>
+                                <button class="btn btn_filter btn_MN">Mới nhất</button>
+                                <button class="btn btn_filter">Bán chạy</button>
 
-                </div>
-                <div>
+                                <div class="select_input">
+                                    <span class="select_input_label">Giá</span>
+                                    <i class="select_input_icon fas fa-caret-down"></i>
+                                    <!-- list options -->
+                                    <ul class="select_input_list">
+                                        <li class="select_input_item">
+                                            <a href="" class="select_input_link">Giá Thấp đến cao</a>                                       
+                                        </li>
+                                        <li class="select_input_item">
+                                            <a href="" class="select_input_link">Giá Cao đến thấp</a>                                          
+                                        </li>
+                                    </ul>
+                                </div>
 
-                </div>
+                                <div class="home_filter_paginate">
+                                    <span class="home_filter_page_num">
+                                        <span class="home_filter_page_current">1</span>/14
+                                    </span>
+                                    <div class="home_filter_page_control">
+                                        <a href="" class="home_filter_page_btn home_filter_page_btn_disabled">
+                                            <i class="home_filter_page_icon fas fa-caret-left"></i>
+                                        </a>
+                                        <a href="" class="home_filter_page_btn">
+                                            <i class="home_filter_page_icon fas fa-caret-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="home_product">
+                                <div class="grid-row">
+                                    <!-- product item -->
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/85e3d31a863e06a9c285cea047232198.jpg_200x200q75.jpg);"></div>
+                                            <h5 class="home_product_name">Nước Tẩy Trang Micellar Dưỡng Da Không Cồn 4 Trong 1 Maybelline New York Micellar Water 4-in-1 400ml</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">148.000đ</span>
+                                                <span class="home_product_item_price_current">102.000đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">835 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">31%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/11756c5e4232942162a4d0910d6779c1.jpg_200x200q75.jpg);"></div>
+                                            <h5 class="home_product_name">Phấn Phủ Mịn Nhẹ Kiềm Dầu Fit Me Matte Poreless Powder Maybelline New York 8.5g</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">188.000đ</span>
+                                                <span class="home_product_item_price_current">135.000đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">1753 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">28%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/e9cee36a5e5f8159138d2e7f3c7d6f6e.jpg_200x200q75.jpg);"></div>
+                                            <h5 class="home_product_name">Kem lót mịn da che khuyết điểm Maybelline New York Baby Skin Pore Eraser Primer 22ml</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">158.000đ</span>
+                                                <span class="home_product_item_price_current">139.000đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">3566 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">12%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/fe330626ee44d94188747e8158615504.jpg_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">🌸 Bút Kẻ Mắt HỒNG LAMEILA eyeliner chống nước lâu trôi thanh mãnh dễ dùng nội địa chính hãng sỉ rẻ WE STORE 🌸</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">10.000đ</span>
+                                                <span class="home_product_item_price_current">6.500đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">176 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Đồng Nai</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">35%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/30ffd61f33e406b7c7de9c626a7f0953.jpg_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">Bông tẩy trang 222 miếng Likado 3 lớp 2 mặt chất liệu cotton bông tự nhiên túi 222 miếng( 1 túi)</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">40.000đ</span>
+                                                <span class="home_product_item_price_current">28.000đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">1076 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Hà Nội</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">30%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                                <div class="grid-row">
+                                    <!-- product item -->
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/1b8afd306433a6eb89e011df3ed6d163.png_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">Set 5 cây Son Danmolu nội địa trung- Son Kem Lì, Mịn Mượt Như Nhung- Set 5 cây Son màu đỏ- Hot trend 2021</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">80.000đ</span>
+                                                <span class="home_product_item_price_current">39.200đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">562 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Hà Nội</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">51%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/9df2091d2ef32981bb5e5674958a0068.jpg_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">🎨 Bút Kẻ Mắt PASTEL B5009 LAMEILA siêu cưng eyeliner chống nước lâu trôi thanh mãnh dễ dùng nội địa chính hãng sỉ rẻ WE STORE 🎨</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">19.856đ</span>
+                                                <span class="home_product_item_price_current">10.780đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">189 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Đồng Nai</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">46%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/a92f9a3b8eee0bd572a41dd134a5e782.jpg_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">🎀 Son Kem Lì Hồng Sữa JOY Ala nội địa siêu cưng lì mịn lâu trôi sỉ rẻ matte lipstick WE STORE 🎀</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">16.000đ</span>
+                                                <span class="home_product_item_price_current">8.820đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">206 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Đồng Nai</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">45%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/bbbca81712de1e610a72733c7c0ede9c.jpg_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">Son dưỡng ẩm Dạng Thạch Hãng HEYXI - Đổi Màu Theo Thời Gian - Vị Berry - Hương Hoa Hồng - Không Lem</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">80.000đ</span>
+                                                <span class="home_product_item_price_current">59.000đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">179 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Overseas</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">26%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid-colum-2-4">
+                                        <div class="home_product_item">
+                                            <div class="home_product_img" style="background-image: url(https://lzd-img-global.slatic.net/g/p/e2cab5f190c20082e6ee6b71f864c34d.jpg_200x200q80.jpg);"></div>
+                                            <h5 class="home_product_name">Sét bộ uốn mi 3D 6D LASH LIFT</h5>
+                                            <div class="home_product_item_price">
+                                                <span class="home_product_item_price_old">200.000đ</span>
+                                                <span class="home_product_item_price_current">130.000đ</span>
+                                            </div>
+                                            <div class="home_product_item_action">
+                                                <span class="home_product_item_like home_product_item_liked">
+                                                    <i class="home_product_item_like_icon_empty fa-regular fa-heart"></i>
+                                                    <i class="home_product_item_like_icon_fill fa-solid fa-heart"></i>
+                                                </span>
+                                                <div class="home_product_item_rating">
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="home_product_item_star_gold fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="home_product_item_sold">189 đã bán</span>
+                                            </div>
+                                            <div class="home_product_item_origin">
+                                                <span class="home_product_item_brand">Whoo</span>
+                                                <span class="home_product_item_name">Hồ Chí Minh</span>
+                                            </div>
+                                            <div class="home_product_item_favourite">
+                                                <i class="fa-solid fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="home_product_item_sale_off">
+                                                <span class="home_product_item_percent">35%</span>
+                                                <span class="home_product_item_label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
             </div>
         </div>
         <div class="footer">

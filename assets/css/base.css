@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: #EE4D2D;
     --broder-color: #dbdbdb;
+    --star-gold-color: #ffce3e;
     --navbar-height: 34px;
     --header-height: 300px;
     --header-with-search-height: calc(var(--header-height)- var(--navbar-height));
@@ -23,7 +24,7 @@ p {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
+ /* responsive*/
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -37,7 +38,9 @@ p {
 
 .grid-row {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
 @keyframes fadein {
@@ -68,7 +71,7 @@ p {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
@@ -88,4 +91,74 @@ p {
     height: 32px;
     font-size: 12px;
     padding: 0 8px;
+}
+/* test */
+.grid-colum-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid-colum-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid-colum-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+/* selecttion*/
+.select_input {
+    min-width: 150px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 34px;
+    padding: 0 12px;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+.select_input::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 20px;
+        top: 25px;
+        left: 0;
+        position: absolute;
+}
+.select_input:hover .select_input_list {
+    display: block;
+}
+.select_input_icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;
+}
+.select_input_list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 22px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 10px 16px;
+    list-style: none;
+    z-index: 1;
+    display: none;
+}
+.select_input_link {
+    font-size: 1.4rem;
+    padding: 5px 0;
+    text-decoration: none;
+    display: block;
+    color: var(--text-color);
+}
+.select_input_link:hover {
+    color: var(--primary-color);
 }
