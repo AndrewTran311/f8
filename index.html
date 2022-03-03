@@ -1172,6 +1172,78 @@
           image:
             "https://lzd-img-global.slatic.net/g/p/e9cee36a5e5f8159138d2e7f3c7d6f6e.jpg_200x200q75.jpg",
         },
+        {
+          sale: 12,
+          name: "Kem lót mịn da che khuyết điểm Maybelline New York Baby Skin Pore Eraser Primer 22ml",
+          price: 158000,
+          sold: 3566,
+          place: "Hồ Chí Minh",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/e9cee36a5e5f8159138d2e7f3c7d6f6e.jpg_200x200q75.jpg",
+        },
+        {
+          sale: 35,
+          name: "🌸 Bút Kẻ Mắt HỒNG LAMEILA eyeliner chống nước lâu trôi thanh mãnh dễ dùng nội địa chính hãng sỉ rẻ WE STORE 🌸",
+          price: 10000,
+          sold: 176,
+          place: "Đồng Nai",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/fe330626ee44d94188747e8158615504.jpg_200x200q80.jpg",
+        },
+        {
+          sale: 30,
+          name: "Bông tẩy trang 222 miếng Likado 3 lớp 2 mặt chất liệu cotton bông tự nhiên túi 222 miếng( 1 túi)",
+          price: 40000,
+          sold: 1076,
+          place: "Hà Nội",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/30ffd61f33e406b7c7de9c626a7f0953.jpg_200x200q80.jpg",
+        },
+        {
+          sale: 51,
+          name: "Set 5 cây Son Danmolu nội địa trung- Son Kem Lì, Mịn Mượt Như Nhung- Set 5 cây Son màu đỏ- Hot trend 2021",
+          price: 80000,
+          sold: 562,
+          place: "Hà Nội",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/1b8afd306433a6eb89e011df3ed6d163.png_200x200q80.jpg",
+        },
+        {
+          sale: 46,
+          name: "🎨 Bút Kẻ Mắt PASTEL B5009 LAMEILA siêu cưng eyeliner chống nước lâu trôi thanh mãnh dễ dùng nội địa chính hãng sỉ rẻ WE STORE 🎨",
+          price: 19856,
+          sold: 189,
+          place: "Đồng Nai",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/9df2091d2ef32981bb5e5674958a0068.jpg_200x200q80.jpg",
+        },
+        {
+          sale: 45,
+          name: "🎀 Son Kem Lì Hồng Sữa JOY Ala nội địa siêu cưng lì mịn lâu trôi sỉ rẻ matte lipstick WE STORE 🎀",
+          price: 16000,
+          sold: 206,
+          place: "Hà Nội",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/a92f9a3b8eee0bd572a41dd134a5e782.jpg_200x200q80.jpg",
+        },
+        {
+          sale: 26,
+          name: "Son dưỡng ẩm Dạng Thạch Hãng HEYXI - Đổi Màu Theo Thời Gian - Vị Berry - Hương Hoa Hồng - Không Lem",
+          price: 80000,
+          sold: 179,
+          place: "Overseas",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/bbbca81712de1e610a72733c7c0ede9c.jpg_200x200q80.jpg",
+        },
+        {
+          sale: 35,
+          name: "Sét bộ uốn mi 3D 6D LASH LIFT",
+          price: 200000,
+          sold: 189,
+          place: "Hồ Chí Minh",
+          image:
+            "https://lzd-img-global.slatic.net/g/p/e2cab5f190c20082e6ee6b71f864c34d.jpg_200x200q80.jpg",
+        },
       ];
       let contentProduct = "";
 
@@ -1182,25 +1254,16 @@
                             <a class="home_product_item" href="#">
                               <div
                                 class="home_product_img"
-                                style="background-image: url(` +
-          item.image +
-          `);"
+                                style="background-image: url(` + item.image +`);"
                               ></div>
                               <h5 class="home_product_name">
-                                ` +
-          item.name +
-          `
+                                ` + item.name + `
                               </h5>
                               <div class="home_product_item_price">
-                                <span class="home_product_item_price_old"
-                                  >` +
-          item.price +
-          `</span
+                                <span class="home_product_item_price_old">` + item.price + `</span
                                 >
                                 <span class="home_product_item_price_current"
-                                  >` +
-                                  (item.price * ((100 - item.sale) / 100)).toFixed()
-            +`</span
+                                  >` + (item.price * ((100 - item.sale) / 100)).toFixed() +`</span
                                 >
                               </div>
                               <div class="home_product_item_action">
