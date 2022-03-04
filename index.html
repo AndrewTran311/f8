@@ -279,8 +279,8 @@
                     <i class="category_heading_icon fas fa-list"></i>
                     DANH MỤC
                   </h3>
-                  <ul class="category_list">
-                    <li class="category_item category_item_active">
+                  <ul class="category_list" id ="category_list_id">
+                    <!--<li class="category_item category_item_active">
                       <a href="#" class="category_link">TRANG ĐIỂM MẶT</a>
                     </li>
                     <li class="category_item">
@@ -288,10 +288,12 @@
                     </li>
                     <li class="category_item">
                       <a href="#" class="category_link">TRANG ĐIỂM MẮT</a>
-                    </li>
+                    </li>-->
                   </ul>
                   <script>
-            
+                   
+                      
+                      
         
                   </script>
                 </nav>
@@ -810,6 +812,32 @@
          
                       document.getElementById("header_cart_list_item_id").innerHTML = contentCart;
           };
+          const category = [
+                      {
+                        active: true,
+                        name: 'TRANG ĐIỂM MẶT'
+                      },
+                      {
+                        active: false,
+                        name: 'TRANG ĐIỂM MÔI'
+                      },
+                      {
+                        active: false,
+                        name: 'TRANG ĐIỂM MẮT'
+                      }
+                    ];
+
+                    const renderCategory = () => {
+                      let contentCategory = "" ;
+                      category.map((item, idx) => {
+                        contentCategory = contentCategory + 
+                      `<li class="category_item category_item_active">
+                      <a href="#" class="category_link">` + item.name + `</a>
+                    </li>`
+                      });
+                      document.getElementById("category_list_id").innerHTML = contentCategory;
+                    };
+                    renderCategory();
           renderCart();
       renderProduct();
     </script>
