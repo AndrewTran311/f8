@@ -831,7 +831,7 @@
                       let contentCategory = "" ;
                       category.map((item, idx) => {
                         contentCategory = contentCategory + 
-                      `<li class="category_item category_item_active">
+                      `<li class="category_item `+ (item.active ? 'category_item_active' : '') +`">
                       <a href="#" class="category_link">` + item.name + `</a>
                     </li>`
                       });
