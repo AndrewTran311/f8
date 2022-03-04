@@ -171,8 +171,8 @@
                       >Chưa có sản phẩm</span
                     >
                     <h4 class="header_cart_heading">Sản phẩm đã thêm</h4>
-                    <ul class="header_cart_list_item">
-                      <!-- cart item -->
+                    <ul class="header_cart_list_item" id = "header_cart_list_item_id">
+                      <!-- cart item 
                       <li class="header_cart_item">
                         <img
                           src="https://img.abaha.vn/photos/origin/83-1580794419-myphamohui-lgvina.png"
@@ -256,7 +256,7 @@
                             <span class="header_cart_item_remove">Xóa</span>
                           </div>
                         </div>
-                      </li>
+                      </li>-->
                     </ul>
                     <button class="header_cart_view btn btn_primary">
                       Xem giỏ hàng
@@ -290,6 +290,10 @@
                       <a href="#" class="category_link">TRANG ĐIỂM MẮT</a>
                     </li>
                   </ul>
+                  <script>
+            
+        
+                  </script>
                 </nav>
               </div>
               <div class="grid-colum-10">
@@ -680,24 +684,19 @@
                       <a class="home_product_item" href="#">
                         <div
                           class="home_product_img"
-                          style="background-image: url(` +
-            item.image +
-            `);"
+                          style="background-image: url(` + item.image + `);"
                         ></div>
                         <h5 class="home_product_name">
-                          ` +
-            item.name +
-            `
+                          ` + item.name + `
                         </h5>
                         <div class="home_product_item_price">
-                          <span class="home_product_item_price_old">` +
-            formatCurrency(item.price) +
-            `</span
+                          <span class="home_product_item_price_old">
+                          ` + formatCurrency(item.price) + `
+                          </span
                           >
                           <span class="home_product_item_price_current"
-                            >` +
-            formatCurrency(item.price * ((100 - item.sale) / 100)) +
-            `</span
+                            >` + formatCurrency(item.price * ((100 - item.sale) / 100)) + `
+                            </span
                           >
                         </div>
                         <div class="home_product_item_action">
@@ -726,26 +725,20 @@
                             ></i>
                             <i class="fa-solid fa-star"></i>
                           </div>
-                          <span class="home_product_item_sold">` +
-            item.sold +
-            ` đã bán</span>
+                          <span class="home_product_item_sold">` + item.sold + ` đã bán</span>
                         </div>
                         <div class="home_product_item_origin">
                           <span class="home_product_item_brand">Whoo</span>
-                          <span class="home_product_item_name"
-                            >` +
-            item.place +
-            `</span
-                          >
+                          <span class="home_product_item_name">
+                          ` + item.place + `</span>
                         </div>
                         <div class="home_product_item_favourite">
                           <i class="fa-solid fa-check"></i>
                           Yêu thích
                         </div>
                         <div class="home_product_item_sale_off">
-                          <span class="home_product_item_percent">` +
-            item.sale +
-            `%</span>
+                          <span class="home_product_item_percent">
+                          ` + item.sale + ` %</span>
                           <span class="home_product_item_label">GIẢM</span>
                         </div>
                       </a>
@@ -765,7 +758,59 @@
         });
         return price;
       };
-
+      const cart = [
+            {
+              image: "https://lzd-img-global.slatic.net/g/p/b4cfa57a9625e233c11a198736842286.jpg_200x200q80.jpg",
+              name: "Nước xịt dưỡng tóc Double Rich chăm sóc tóc khô sơ hư tổn 120ml - 250ml",
+              price: 62000,
+            },
+            {
+              image: "https://lzd-img-global.slatic.net/g/p/fbe871e027ed4051a79b58b3d246d307.jpg_200x200q90.jpg",
+              name: "Kem Body Collagen X3 Luxury Đông Anh. Siêu Trắng Mịn . Hiệu quả chỉ sau 1 tuần",
+              price: 100000,
+            },
+            {
+              image: "https://img.abaha.vn/photos/origin/83-1580794419-myphamohui-lgvina.png",
+              name: "Set kem mắt tái sinh Ohui The First Geniture Eye Cream Edition Grand Blue",
+              price: 1000000,
+            }
+          ];
+          const renderCart = () => {
+        let contentCart = "";
+        cart.map((item, idx) => {
+          contentCart = contentCart +
+          `<li class="header_cart_item">
+                        <img
+                          src="` + item.image + `"
+                          alt=""
+                          class="header_cart_item_img"
+                        />
+                        <div class="header_cart_item_info">
+                          <div class="header_cart_item_head">
+                            <h5 class="header_cart_item_name">
+                              ` + item.name + `
+                            </h5>
+                            <div class="header_item_wrap">
+                              <span class="header_cart_item_price">
+                              ` + formatCurrency(item.price) + `</span
+                              >
+                              <span class="header_cart_item_miltiply">X</span>
+                              <span class="header_cart_item_qnt">1</span>
+                            </div>
+                          </div>
+                          <div class="header_cart_item_body">
+                            <span class="header_cart_item_description">
+                              Phân loại: Bạc
+                            </span>
+                            <span class="header_cart_item_remove">Xóa</span>
+                          </div>
+                        </div>
+                      </li>`;
+        });
+         
+                      document.getElementById("header_cart_list_item_id").innerHTML = contentCart;
+          };
+          renderCart();
       renderProduct();
     </script>
   </body>
